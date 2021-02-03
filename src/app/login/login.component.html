@@ -1,0 +1,23 @@
+<div style="text-align: center;">
+    <div class="login-main">
+        <mat-card class="border">
+            <h1 style="text-align: center !important;">
+                LOGIN PAGE
+            </h1>
+            <mat-card-content>
+                <mat-form-field>
+                    <input type="username" matInput placeholder="Username"  [ngModel]="name" (ngModelChange)="name = $event" >
+                </mat-form-field>
+                <br>
+                <mat-form-field>
+                    <input type="password" matInput placeholder="Password" [ngModel]="pass" (ngModelChange)="pass = $event">
+                </mat-form-field>
+            </mat-card-content>     
+        <mat-card-actions>
+          <!-- <button mat-raised-button color="primary"  (click)="onClickLogin()" >Login</button> -->
+          <button mat-raised-button color="primary"  (click)="onClickLogin()" routerLinkActive="active" >Login</button>
+          <button mat-raised-button color="primary" routerLink="/request" routerLinkActive="active">Request</button>
+        </mat-card-actions>
+        </mat-card>
+    </div>
+</div>
